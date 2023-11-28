@@ -151,7 +151,7 @@ export default function TopNav() {
 
           <div className='px-[4px] py-[4px] mt-[-4px] rounded-full md:w-[58px] md:h-[58px]  bg-slate-400'>
             {/* <Image src="/users/20150809_151649-short.jpg" alt="User"  className='rounded-full w-[25px] h-[25px] md:w-[50px] md:h-[50]' /> */}
-            <img src="/users/User2015-11-19.jpg" alt="User" className='rounded-full md:w-[50px] md:h-[50px]' />
+            <img src={"/users/User2015-11-19.jpg"} alt="User" className='rounded-full md:w-[50px] md:h-[50px]' />
             {/* <img src="/users/2012-01-05 03.08.56short.jpg" alt="User" className='rounded-full md:w-[50px] md:h-[50px]' /> */}
             </div>
           </div>
