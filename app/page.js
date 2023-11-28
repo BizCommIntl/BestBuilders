@@ -43,7 +43,7 @@ export default function Home() {
 
 <br />
 App Used by:
-      <img src={"/users/User2015-11-19.jpg"} alt="User" className='rounded-full md:w-[50px] md:h-[50px]' />
+      <img src={"/Users/User2015-11-19.jpg"} alt="User" className='rounded-full md:w-[50px] md:h-[50px]' />
 
       {/* <TopNav /> */}
 
