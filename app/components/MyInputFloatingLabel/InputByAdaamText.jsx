@@ -32,7 +32,7 @@ export default function InputByAdaamText({
       <div class="relative">
         <input id={Name} name={Name} type="text"
                 value={Val}
-                onChange={(e) => setVal(e)}
+                onChange={(e) => setVal(e.target.name, e.target.value)}
         
           placeholder="Mufakhar Adaam"
           className={"peer placeholder-transparent " + CSS4Input }

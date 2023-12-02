@@ -203,8 +203,15 @@ export default function TopNav() {
 
                     {/* Divider Line */}
                     <div className="mx-auto w-[90%] border-t border-blue-400" ></div>
+                    {/* ------------------------------------------------------------------------- */}
 
                     <div className='my-1 flex gap-3 items-center border-b'><BsNewspaper /><Link href={'/Pages/About'}>Customer Profiles</Link></div>
+
+                    {/* Divider Line */}
+                    <div className="mx-auto w-[90%] border-t border-blue-400" ></div>
+                    {/* ------------------------------------------------------------------------- */}
+
+                    <div className='my-1 flex gap-3 items-center border-b'><BsNewspaper /><Link href={'/Pages/Suppliers'}>Vender Profiles</Link></div>
 
                   </div>
                 </div>

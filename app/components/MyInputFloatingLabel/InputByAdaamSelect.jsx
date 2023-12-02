@@ -132,7 +132,7 @@ export default function InputByAdaamSelect({
 
       {/* Options List for Select */}
       {/* <ul className={`absolute min-w-full z-50 text-left bg-white mt-[2px] rounded-md border shadow-lg ${open ? "max-h-96" : "max-h-0"} overflow-y-auto  overflow-x-hidden`}  > */}
-      <ul  tabindex={-1} className={` absolute min-w-full z-50 text-left bg-white mt-[2px] rounded-md border shadow-lg ${open ? "max-h-[" + OptionsBoxHeight + "]" : "max-h-0"} overflow-y-auto  overflow-x-hidden`}  >
+      <ul  tabindex={-1} className={` absolute min-w-full z-50 text-left bg-white mt-[2px] rounded-md border shadow-lg ${open ? "max-h-[" + OptionsBoxHeight + "]" : " hidden "} overflow-y-auto  overflow-x-hidden`}  >
 
         {/* Search box Select */}
         <div  className="flex items-center px-2 sticky top-0 bg-white">
