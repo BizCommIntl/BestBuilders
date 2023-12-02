@@ -5,7 +5,6 @@ import NF from 'react-number-format'
 import Moment from 'moment'
 import ReactDatePicker from 'react-datepicker'
 
-import MyComponent from '@/app/Pages/MyComponent'
 import Image from 'next/image'
 import { Input } from 'postcss'
 import InputByAdaamText from '@/app/components/MyInputFloatingLabel/InputByAdaamText'
@@ -263,10 +262,6 @@ export default function Items() {
 
       </div>
     </div >
-
-
-
-      {/* <MyComponent /> */ }
 
 
     </>
