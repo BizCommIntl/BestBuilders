@@ -1,7 +1,9 @@
 import { Roboto } from "next/font/google";
 import { Inter } from 'next/font/google'
-import "tw-elements-react/dist/css/tw-elements-react.min.css";
+// import "tw-elements-react/dist/css/tw-elements-react.min.css";
 import './globals.css'
+import "react-datepicker/dist/react-datepicker.css";
+
 import TopNav from './components/Nav/TopNav'
 
 const inter = Inter({ subsets: ['latin'] })

@@ -13,7 +13,11 @@ module.exports = {
      //    "./node_modules/tw-elements-react/dist/js/**/*.js"
   ],
   theme: {
+
     extend: {
+      fontFamily: {
+        Poppins: "Poppins",
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -21,6 +25,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tw-elements-react/dist/plugin.cjs")]
+  // plugins: [require("tw-elements-react/dist/plugin.cjs")]
+  plugins: []
 }
 
