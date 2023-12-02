@@ -6,13 +6,13 @@ import Moment from 'moment'
 import ReactDatePicker from 'react-datepicker'
 
 import Image from 'next/image'
-// import { Input } from 'postcss'
-import { VscSaveAs } from "react-icons/vsc";
-import { TbWiperWash } from "react-icons/tb";
+import { Input } from 'postcss'
 import InputByAdaamText from '@/app/components/MyInputFloatingLabel/InputByAdaamText'
 import InputByAdaamNumber from '@/app/components/MyInputFloatingLabel/InputByAdaamNumber'
 import InputByAdaamDate from '@/app/components/MyInputFloatingLabel/InputByAdaamDate'
 import InputByAdaamSelect from '@/app/components/MyInputFloatingLabel/InputByAdaamSelect'
+import { TbWiperWash } from 'react-icons/tb'
+import { VscSaveAs } from 'react-icons/vsc'
 
 const _DocsRef = [
   { Id: 101, Title: 'Case No. 101', City: 'Multan' }
@@ -123,7 +123,7 @@ export default function Page() {
       <div className="w-full md:w-1/2 mx-auto mt-1 mb-4 md:my-10 flex flex-col justify-center  rounded-lg shadow-lg bg-white ">
         <div className='text-3xl mx-auto my-2'>Suppliers Profile</div>
 
-        <div className="w-md   rounded shadow-lg grid grid-cols-1 md:grid-cols-2 ">
+        <div className="w-md  rounded shadow-lg grid grid-cols-1 md:grid-cols-2 ">
 
           {/* START: Left Panel ------------------------------------------*/}
           <div className='my-4 px-10 flex flex-col items-center'>
@@ -190,10 +190,11 @@ export default function Page() {
 
           {/* START: RIGHT Panel ------------------------------------------*/}
           {/* Right Panel: ****************** Image Section */}
-          <div className='px-4   '>
+          <div className='my-4 px-4 flex flex-col items-center'>
 
-            <label className='mx-auto cursor-pointer'>
-              <button > Select Image</button >
+
+            <label className=' cursor-pointer'>
+              <span>Select Image</span>
               <input type="file" className="hidden" onChange={(e) => HandleOnChangeFileBrowser(e)} />
             </label>
 
@@ -219,13 +220,11 @@ export default function Page() {
             </div>
 
 
-
             <br />
             <br />
 
           </div>
           {/* END: RIGHT Panel ------------------------------------------*/}
-
 
         </div>
 
@@ -234,7 +233,7 @@ export default function Page() {
             <button className='w-36 h-12 flex gap-2 items-center justify-center rounded-lg border border-gray-400 bg-gray-300  hover:bg-gray-300 hover:text-xl'> <TbWiperWash size={24} /> Reset </button>
             <button className='w-36 h-12 flex gap-2 items-center justify-center rounded-lg border border-green-500 bg-green-500  hover:bg-green-500 hover:text-xl'> <VscSaveAs size={24} /> Save </button>
           </div>
-          </div>
+        </div>
       </div >
 
 
