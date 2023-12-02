@@ -6,17 +6,12 @@ import Moment from 'moment'
 import ReactDatePicker from 'react-datepicker'
 
 import MyComponent from '@/app/Pages/MyComponent'
-import MyInput from '@/app/components/MyInput/MyInput'
 import Image from 'next/image'
 import { Input } from 'postcss'
-import MyInputNum from '@/app/components/MyInputNum/MyInputNum'
-import MyInputDate from '@/app/components/MyInputDate/MyInputDate'
 import InputByAdaamText from '@/app/components/MyInputFloatingLabel/InputByAdaamText'
 import InputByAdaamNumber from '@/app/components/MyInputFloatingLabel/InputByAdaamNumber'
 import InputByAdaamDate from '@/app/components/MyInputFloatingLabel/InputByAdaamDate'
 import InputByAdaamSelect from '@/app/components/MyInputFloatingLabel/InputByAdaamSelect'
-import SelectorOrg from '@/app/components/SelectorSearchable/SelectorOrg'
-import Selector from '@/app/components/SelectorSearchable/Selector'
 
 const _DocsRef = [
   { Id: 101, Title: 'Case No. 101', City: 'Multan' }
@@ -148,12 +143,6 @@ export default function Items() {
               <InputByAdaamSelect Options={Docs} TextKey='Label' ValueKey='Value' />
             </div>
 
-            {/* Input Code/ID  */}
-            <div className='mt-7 w-full'>
-              {/* <SelectorOrg/> */}
-              <Selector Options={countries} TextKey='name' ValueKey='name' />
-            </div>
-
 
             {/* Input Code/ID  */}
             {/* <div className='mt-7'>
@@ -176,30 +165,6 @@ export default function Items() {
               />
 
             </div> */}
-
-
-            {/* Input Code/ID  */}
-            <div>
-              {/* <MyInput Label='Item Code' Name='ID' Val={Rec.ID} setVal={HandleInputs}
-                ShiftUpHeight={6}
-                // CSS4Input='h-[26] px-2 text-black border-2 border-purple-400 rounded-lg border-opacity-0 shadow-md outline-none focus:border-amber-500 focus:bg-amber-300 '
-                // CSS4Label='px-1 absolute left-2 -top-[2px] text-opacity-80 '
-                CSS4Input='h-6 px-2 text-black border-b-2  border-purple-400 bg-inherit shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-                CSS4Label='px-1 absolute left-2 -top-[0px] text-opacity-80 '
-              /> */}
-            </div>
-
-            {/* Input Title  */}
-            <div className='mt-7'>
-              <MyInput Label='Item Title' Name='Title' Val={Rec.Title} setVal={HandleInputs}
-                ShiftUpHeight={6}
-                CSS4Input='h-6 px-2 text-black text-end border-b-2  border-purple-400 bg-inherit shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-                CSS4Label='px-1 absolute left-2 -top-[0px] text-opacity-80 '
-              />
-            </div>
-
-
-
 
             {/* Input Order Date  */}
             <div className='mt-7'>
@@ -253,50 +218,6 @@ export default function Items() {
           <div className='mt-7 w-full px-4'>
             {/* <SelectorOrg/> */}
             <InputByAdaamSelect Options={Docs} TextKey='Label' ValueKey='Value' />
-          </div>
-
-
-          {/* Input Code/ID  */}
-          <div className='mt-7'>
-            <MyInput Label='Remarks' Name='Rem' Val={Rec.Rem} setVal={HandleInputs}
-              ShiftUpHeight={6}
-              CSS4Input='h-6 px-2 text-black text-end border-b-2  border-purple-400 bg-inherit shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-              CSS4Label='px-1 absolute left-2 -top-[0px] text-opacity-80 '
-
-            />
-          </div>
-
-          {/* Input Code/ID  */}
-          <div className='mt-7'>
-            <MyInput Label='Paking' Name='Paking' Val={Rec.Paking} setVal={HandleInputs}
-              ShiftUpHeight={6}
-              CSS4Input='h-[26] px-2 text-black border-2 border-purple-400 rounded-lg border-opacity-0 shadow-md outline-none focus:border-amber-500 focus:bg-amber-300 '
-              CSS4Label='px-1 absolute left-2 -top-[2px] text-opacity-80 '
-            // CSS4Input='h-6 px-2 text-black text-end border-b-2  border-purple-400 bg-inherit shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-            // CSS4Label='px-1 absolute left-2 -top-[0px] text-opacity-80 '
-
-            />
-          </div>
-
-          {/* Input Code/ID  */}
-          <div className='mt-7'>
-            <MyInput Label='Unit' Name='Unit' Val={Rec.Unit} setVal={HandleInputs}
-              ShiftUpHeight={4}
-              // CSS4Input='h-[36] px-2 text-black border-2 border-purple-400 rounded-lg border-opacity-0 shadow-md outline-none focus:border-amber-500 focus:bg-amber-300 '
-              // CSS4Label='px-1 absolute left-2 -top-[2px] text-opacity-80 '
-              CSS4Input='h-[46px] px-2 text-black text-end border-2 rounded-md border-purple-400  shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-              CSS4Label='px-4 absolute left-2 -top-[0px] text-opacity-80 '
-
-            />
-          </div>
-
-          {/* Input P-Price  */}
-          <div className='mt-7'>
-
-            <MyInputNum Label='Price' Name='Price' Val={Rec.PPrice}
-              CSS4Input='h-6 px-2 text-black border-b-2  border-purple-400 bg-inherit shadow-md outline-none focus:border-amber-500 focus:bg-amber-300/50'
-              CSS4Label='px-1 absolute left-2 -top-[0px] text-opacity-80 '
-            />
           </div>
 
 

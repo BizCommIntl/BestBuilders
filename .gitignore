@@ -8,6 +8,7 @@
 
 # testing
 /coverage
+/DraftComponents4Testing
 
 # next.js
 /.next/
